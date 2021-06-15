@@ -14,8 +14,26 @@ const index = (req, res) => {
   
   }
 
+  const asian_countries = (req, res) => {
+    res.render('asian/countries', { title: 'Asian cuisines' });
+   
+   }
+
+   const philippines_cuisines = (req, res) => {
+    res.render('asian/philippines-cuisines', { title: 'Philippines cuisines' });
+   
+   }
+ 
+   const php_lechon = (req, res) => {
+    res.render('asian/php-lechon', { title: 'Lechon dish' });
+   
+   }
+   
 
 
   module.exports = {
-    index
+    index,
+    asian_countries,
+    philippines_cuisines,
+    php_lechon
   }
